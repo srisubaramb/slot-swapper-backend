@@ -20,4 +20,9 @@ app.get('/health', (req, res) => {
   res.status(200).json({ ok: true });
 });
 
+// Root route
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Slot Swapper Backend API is running' });
+});
+
 module.exports = app;
